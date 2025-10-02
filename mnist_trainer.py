@@ -25,7 +25,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 history = model.fit(x_train, y_train, epochs=5, validation_data=(x_test, y_test))
 
 # Guardar modelo
-model.save('mnist_model.h5')
+model.save('mnist_model.keras')
 
 # Graficar precisión
 plt.plot(history.history['accuracy'], label='Entrenamiento')
